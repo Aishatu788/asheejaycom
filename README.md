@@ -275,6 +275,18 @@ Clone this repository on your own GitHub account and deploy to Vercel:
 
 <br>
 
+## Ashee Jay Ventures — Setup Notes
+
+### 1. Web3Forms (contact form)
+
+Sign up free at [web3forms.com](https://web3forms.com), get your access key, then replace `YOUR_ACCESS_KEY` in `src/pages/contact.astro`.
+
+### 2. Keystatic CMS admin
+
+After the Vercel deploy, visit `https://yourdomain.com/keystatic` to access the CMS. Keystatic will prompt for GitHub authentication on first use. The client can then edit Blog Posts and Projects from a visual admin UI.
+
+<br>
+
 ## Frequently Asked Questions
 
 - Why?
