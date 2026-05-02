@@ -1,3 +1,4 @@
+export const prerender = true;
 import { getRssString } from '@astrojs/rss';
 
 import { SITE, METADATA, APP_BLOG } from 'astrowind:config';

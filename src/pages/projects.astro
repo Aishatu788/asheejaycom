@@ -1,0 +1,140 @@
+---
+export const prerender = true;
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+
+const metadata = {
+  title: 'Projects & Gallery',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Projects & Gallery"
+    title="Our Work Speaks for Itself"
+    subtitle="Browse a selection of completed projects across our service areas — from bespoke furniture to full construction builds and solar installations across Nigeria."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Hero>
+
+  <!-- Furniture Projects -->
+
+  <Content
+    isReversed
+    tagline="Furniture & Interior Décor"
+    title="Creating Spaces People Love"
+    items={[
+      { title: 'Custom living room sets', description: 'Bespoke sofas, coffee tables, and entertainment units crafted to client specifications.' },
+      { title: 'Office interior fit-outs', description: 'Complete office furniture packages including desks, chairs, cabinets, and reception areas.' },
+      { title: 'Bedroom & wardrobe builds', description: 'Made-to-measure bedroom furniture including beds, wardrobes, and dressing areas.' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Furniture projects',
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Construction Projects -->
+
+  <Content
+    isAfterContent
+    tagline="Construction & Building Works"
+    title="Built to Last"
+    items={[
+      { title: 'Residential developments', description: 'Multiple residential builds across Kaduna State, completed on time and to specification.' },
+      { title: 'Commercial buildings', description: 'Office complexes, warehouses, and retail spaces built with quality materials and finishes.' },
+      { title: 'Renovation projects', description: 'Full renovations of existing properties including structural changes, tiling, and finishing.' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Construction projects',
+    }}
+  />
+
+  <!-- Solar Projects -->
+
+  <Content
+    isReversed
+    isAfterContent
+    tagline="Solar Energy Solutions"
+    title="Powering Homes & Businesses"
+    items={[
+      { title: 'Residential solar installations', description: 'Complete off-grid and hybrid solar systems for private homes across northern Nigeria.' },
+      { title: 'Commercial solar systems', description: 'Large-scale solar arrays for SMEs, factories, and institutional facilities.' },
+      { title: 'Solar streetlighting', description: 'Community and estate solar streetlight installations for improved safety and visibility.' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80',
+      alt: 'Solar energy projects',
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Bamboo Projects -->
+
+  <Content
+    isAfterContent
+    tagline="Bamboo Products"
+    title="Sustainable Craftsmanship"
+    items={[
+      { title: 'Bamboo furniture collections', description: 'Custom bamboo chairs, tables, and shelving delivered to homes and hospitality businesses.' },
+      { title: 'Bamboo interior décor', description: 'Decorative bamboo panels, partitions, and accent pieces for residential and commercial interiors.' },
+      { title: 'Bamboo garden & outdoor products', description: 'Pergolas, fences, and outdoor furniture crafted from durable, treated bamboo.' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Bamboo products projects',
+    }}
+  />
+
+  <!-- Stats -->
+
+  <Features2
+    title="Projects at a Glance"
+    tagline="Our Track Record"
+    columns={4}
+    items={[
+      { title: '200+', description: 'Total projects completed.' },
+      { title: '150+', description: 'Satisfied clients served.' },
+      { title: '10+', description: 'Years of industry experience.' },
+      { title: '7', description: 'Service areas covered.' },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- CTA -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Your Project',
+        href: '/contact',
+        icon: 'tabler:calendar',
+      },
+      {
+        text: 'See Our Services',
+        href: '/services',
+      },
+    ]}
+    title="Have a project in mind?"
+    subtitle="Whether it is a new build, a furniture commission, or a solar installation — get in touch for a free consultation."
+  />
+</Layout>

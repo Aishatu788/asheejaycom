@@ -21,4 +21,10 @@ pnpm-debug.log*
 
 pnpm-lock.yaml
 
-.astro
+.astro.vercel/
+.vercel/
+dist/
+
+# Build output directories
+.astro/
+.vercel/

@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Ashee Jay Ventures Limited
+  site: 'https://asheejay.com'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,20 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Ashee Jay Ventures Limited
+    template: '%s — Ashee Jay Ventures'
+  description: 'Ashee Jay Ventures Limited — your trusted partner for quality furniture & interior décor, bamboo products, construction & building works, solar energy solutions, electrical works, and procurement services in Kaduna, Nigeria.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Ashee Jay Ventures Limited
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
     cardType: summary_large_image
 
 i18n:
